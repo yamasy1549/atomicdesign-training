@@ -3,30 +3,121 @@
 
 /* colors */
 $cream: #F3F2DB;
-$dark-cream: #C26102;
+$gray: #493F37;
+$light-gray: #EEEEEE;
 $brown: #C26102;
-$black: #C26102;
+$black: #100000;
+$white: #ffffff;
+$red: #C80000;
 
 /* fonts */
-$font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+$primary-font: "Noto Sans CJK JP", Meiryo, sans-serif;
+
+/* animations */
+$fade: 0.3s ease-out;
+$movement: 0.8s ease-in-out;
+
+/* headings */
+@mixin h1 { font-size: 32px; }
+@mixin h2 { font-size: 24px; }
+@mixin h3 { font-size: 18px; }
+@mixin h4 { font-size: 16px; }
+@mixin h5 { font-size: 13px; }
+@mixin h6 { font-size: 10px; }
+
+/* paragraph */
+@mixin p { color: $black; }
+
+/* blockquote */
+@mixin blockquote {
+  color: $gray;
+  font-style: italic;
+  border-left: 1px solid $gray;
+  padding-left: 20px;
+}
+
+/* inline elements */
+@mixin a { color: $black; }
+
+@mixin kbd {
+  background-color: $white;
+  color: $red;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+}
 
 /* labels */
 @mixin label {
   color: $black;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
   font-stretch: extra-condensed;
 }
 
 /* input */
 @mixin input {
+  display: inline-block;
   background-color: $black;
-  color: $dark-cream;
+  color: $gray;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
   font-stretch: extra-condensed;
+
+  &:placeholder-shown {
+    color: $gray;
+  }
+  &::-webkit-input-placeholder {
+    color: $gray;
+  }
+  &:-moz-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $gray;
+  }
 }
 
 /* buttons */
 @mixin button {
+  display: inline-block;
   background-color: $brown;
   color: $cream;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
   font-stretch: extra-condensed;
   text-decoration: none;
+}
+
+@mixin disabled {
+  background-color: $light-gray;
+  color: $gray;
+  cursor: not-allowed;
+}
+
+/* table */
+@mixin table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $gray;
+  width: 100%;
+
+  th,
+  td {
+    text-align: left;
+    border: 1px solid $gray;
+    padding: 0.2rem;
+  }
 }

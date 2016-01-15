@@ -1,1 +1,6 @@
+@import '../atoms/style';
 @import 'molecules';
+
+.search-field { @include searchField; }
+.nav { @include nav; }
+.logo { @include logo; }

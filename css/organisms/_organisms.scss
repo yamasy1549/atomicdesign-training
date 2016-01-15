@@ -1,0 +1,49 @@
+@mixin header {
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+  margin-top: 20px;
+  padding: 0 20px 10px;
+  border-bottom: 3px solid $black;
+
+  .logo { height: 100%; }
+
+  .nav {
+    flex-grow: 2;
+    margin: 0 200px 0 30px;
+    line-height: 1.5;
+  }
+
+  .search-field { flex-grow: 1; }
+}
+
+@mixin main {
+  .top-image { width: 100%; }
+
+  img  {
+    width: auto;
+    height: 100%;
+  }
+
+  article {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .row {
+    display: flex;
+
+    > * {
+      flex-grow: 1;
+      margin-right: 20px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  > .row {
+    margin: 30px 0;
+  }
+}

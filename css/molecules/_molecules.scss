@@ -1,0 +1,35 @@
+@mixin searchField {
+  .search-form { display: flex; }
+
+  .label {
+    display: block;
+    padding-bottom: 0.3rem;
+  }
+
+  .input {
+    flex-grow: 3;
+    margin-right: 4px;
+  }
+
+  .btn { flex-grow: 1; }
+}
+
+@mixin nav {
+  ul,
+  ol {
+    display: flex;
+  }
+
+  .nav-item {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 24px;
+    list-style: none;
+  }
+
+  a { text-decoration: none; }
+}
+
+@mixin logo {
+  display: block;
+}

@@ -1,3 +1,1096 @@
+@charset "UTF-8";
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
 
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+.search-field .search-form {
+  display: flex; }
+.search-field .label {
+  display: block;
+  padding-bottom: 0.3rem; }
+.search-field .input {
+  flex-grow: 3;
+  margin-right: 4px; }
+.search-field .btn {
+  flex-grow: 1; }
+
+.nav ul,
+.nav ol {
+  display: flex; }
+.nav .nav-item {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 24px;
+  list-style: none; }
+.nav a {
+  text-decoration: none; }
+
+.logo {
+  display: block; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+.search-field .search-form {
+  display: flex; }
+.search-field .label {
+  display: block;
+  padding-bottom: 0.3rem; }
+.search-field .input {
+  flex-grow: 3;
+  margin-right: 4px; }
+.search-field .btn {
+  flex-grow: 1; }
+
+.nav ul,
+.nav ol {
+  display: flex; }
+.nav .nav-item {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 24px;
+  list-style: none; }
+.nav a {
+  text-decoration: none; }
+
+.logo {
+  display: block; }
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+  margin-top: 20px;
+  padding: 0 20px 10px;
+  border-bottom: 3px solid #100000; }
+  .header .logo {
+    height: 100%; }
+  .header .nav {
+    flex-grow: 2;
+    margin: 0 200px 0 30px;
+    line-height: 1.5; }
+  .header .search-field {
+    flex-grow: 1; }
+
+.main .top-image {
+  width: 100%; }
+.main img {
+  width: auto;
+  height: 100%; }
+.main article {
+  font-size: 18px;
+  line-height: 1.5; }
+.main .row {
+  display: flex; }
+  .main .row > * {
+    flex-grow: 1;
+    margin-right: 20px; }
+    .main .row > *:last-child {
+      margin: 0; }
+.main > .row {
+  margin: 30px 0; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+.search-field .search-form {
+  display: flex; }
+.search-field .label {
+  display: block;
+  padding-bottom: 0.3rem; }
+.search-field .input {
+  flex-grow: 3;
+  margin-right: 4px; }
+.search-field .btn {
+  flex-grow: 1; }
+
+.nav ul,
+.nav ol {
+  display: flex; }
+.nav .nav-item {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 24px;
+  list-style: none; }
+.nav a {
+  text-decoration: none; }
+
+.logo {
+  display: block; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+/* colors */
+/* fonts */
+/* animations */
+/* headings */
+/* paragraph */
+/* blockquote */
+/* inline elements */
+/* labels */
+/* input */
+/* buttons */
+/* table */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+  background: #F3F2DB; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 13px; }
+
+h6 {
+  font-size: 10px; }
+
+p {
+  color: #100000; }
+
+blockquote {
+  color: #493F37;
+  font-style: italic;
+  border-left: 1px solid #493F37;
+  padding-left: 20px; }
+
+a {
+  color: #100000; }
+
+kbd {
+  background-color: #ffffff;
+  color: #C80000;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px; }
+
+.label {
+  color: #100000;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: extra-condensed; }
+
+.input {
+  display: inline-block;
+  background-color: #100000;
+  color: #493F37;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-stretch: extra-condensed; }
+  .input:placeholder-shown {
+    color: #493F37; }
+  .input::-webkit-input-placeholder {
+    color: #493F37; }
+  .input:-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input::-moz-placeholder {
+    color: #493F37;
+    opacity: 1; }
+  .input:-ms-input-placeholder {
+    color: #493F37; }
+
+.btn {
+  display: inline-block;
+  background-color: #C26102;
+  color: #F3F2DB;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+  font-stretch: extra-condensed;
+  text-decoration: none; }
+
+.disabled {
+  background-color: #EEEEEE;
+  color: #493F37;
+  cursor: not-allowed; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #493F37;
+  width: 100%; }
+  table th,
+  table td {
+    text-align: left;
+    border: 1px solid #493F37;
+    padding: 0.2rem; }
+
+.search-field .search-form {
+  display: flex; }
+.search-field .label {
+  display: block;
+  padding-bottom: 0.3rem; }
+.search-field .input {
+  flex-grow: 3;
+  margin-right: 4px; }
+.search-field .btn {
+  flex-grow: 1; }
+
+.nav ul,
+.nav ol {
+  display: flex; }
+.nav .nav-item {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 24px;
+  list-style: none; }
+.nav a {
+  text-decoration: none; }
+
+.logo {
+  display: block; }
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+  margin-top: 20px;
+  padding: 0 20px 10px;
+  border-bottom: 3px solid #100000; }
+  .header .logo {
+    height: 100%; }
+  .header .nav {
+    flex-grow: 2;
+    margin: 0 200px 0 30px;
+    line-height: 1.5; }
+  .header .search-field {
+    flex-grow: 1; }
+
+.main .top-image {
+  width: 100%; }
+.main img {
+  width: auto;
+  height: 100%; }
+.main article {
+  font-size: 18px;
+  line-height: 1.5; }
+.main .row {
+  display: flex; }
+  .main .row > * {
+    flex-grow: 1;
+    margin-right: 20px; }
+    .main .row > *:last-child {
+      margin: 0; }
+.main > .row {
+  margin: 30px 0; }
+
+.header {
+  margin-bottom: 30px; }
+
+.main {
+  padding: 0 20px; }
 
 /*# sourceMappingURL=style.css.map */

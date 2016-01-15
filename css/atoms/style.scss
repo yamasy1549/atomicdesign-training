@@ -1,5 +1,29 @@
 @import 'atoms';
 
-.btn {
-  @include button;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: $primary-font;
+  background: $cream;
+}
+
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
+h5 { @include h5; }
+h6 { @include h6; }
+
+p { @include p; }
+blockquote { @include blockquote; }
+a { @include a; }
+kbd { @include kbd; }
+
+.label { @include label; }
+.input { @include input; }
+.btn { @include button; }
+.disabled { @include disabled; }
+
+table { @include table; }
