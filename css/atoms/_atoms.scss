@@ -1,0 +1,32 @@
+/* 基本的に単体ではUIとして意味をなさない */
+/* これ以上分割できない要素 */
+
+/* colors */
+$cream: #F3F2DB;
+$dark-cream: #C26102;
+$brown: #C26102;
+$black: #C26102;
+
+/* fonts */
+$font-family: "Noto Sans CJK JP", Meiryo, sans-serif;
+
+/* labels */
+@mixin label {
+  color: $black;
+  font-stretch: extra-condensed;
+}
+
+/* input */
+@mixin input {
+  background-color: $black;
+  color: $dark-cream;
+  font-stretch: extra-condensed;
+}
+
+/* buttons */
+@mixin button {
+  background-color: $brown;
+  color: $cream;
+  font-stretch: extra-condensed;
+  text-decoration: none;
+}
