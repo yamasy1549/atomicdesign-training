@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>kansai-ug</title>
+</head>
+<body>
+  <header class="header">
+    <img src="images/image-foo.png" alt="ロゴ見本" class="logo">
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="">Home</a></li>
+        <li class="nav-item"><a href="">About</a></li>
+        <li class="nav-item"><a href="">Blog</a></li>
+        <li class="nav-item"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-field">
+      <label for="keywordInput" class="label">SEARCH THE SITE</label>
+      <div class="search-form">
+        <input type="text" id="keywordInput" placeholder="ENTER KEYWORD" class="input">
+        <a class="btn" href="">SEARCH</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <img src="images/image-page-top.png" alt="トップ画像" class="top-image">
+    <article class="row">
+      <section>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <p>
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+        </p>
+        <p>
+          Lorem Ipsum has been the industry's standard
+        </p>
+        <p>
+          Lorem Ipsum has been the industry's standard
+        </p>
+      </section>
+      <section class="row">
+        <img src="images/image-small.png" alt="何かの写真" class="small-image">
+        <div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+          </p>
+          <p>
+            Lorem Ipsum has been the industry's standard
+          </p>
+        </div>
+      </section>
+    </article>
+    <article class="row">
+      <section>
+        <img src="images/image-movie.png" alt="映像" class="movie">
+      </section>
+      <section class="row">
+        <img src="images/image-small.png" alt="何かの写真" class="small-image">
+        <img src="images/image-small.png" alt="何かの写真" class="small-image">
+        <img src="images/image-small.png" alt="何かの写真" class="small-image">
+      </section>
+    </article>
+  </main>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
+    function lrPage() {
+      if(event.keyCode == 37) location.href = "./templates.html";
+      if(event.keyCode == 39) location.href = "./summary.html";
+    }
+    window.document.onkeydown = lrPage;
+  </script>
+</body>
+</html>
+

@@ -6,10 +6,13 @@
   <title>kansai-ug</title>
 </head>
 <body>
-  <div>hoge</div>
-
   <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
+    function lrPage() {
+      if(event.keyCode == 37) location.href = "./title.html";
+      if(event.keyCode == 39) location.href = "./atoms.html";
+    }
+    window.document.onkeydown = lrPage;
   </script>
 </body>
 </html>
