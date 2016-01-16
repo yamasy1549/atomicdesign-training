@@ -2,89 +2,115 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/atoms/style.css">
   <title>kansai-ug</title>
 </head>
 <body>
-  <h1>Heading Level 1</h1>
-  <h2>Heading Level 2</h2>
-  <h3>Heading Level 3</h3>
-  <h4>Heading Level 4</h4>
-  <h5>Heading Level 5</h5>
-  <h6>Heading Level 6</h6>
+  <h1 class="heading">Atoms <small>原子</small></h1>
+  <p class="lead">
+    /* これ以上分割できない要素 */
+    <br>
+    /* 基本的に単体ではUIとして意味をなさない */
+  </p>
 
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-  <blockquote>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  </blockquote>
+  <div class="wrapper">
+    <h2 class="subheading">Headings</h2>
+    <h1>Heading Level 1</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
 
-  <a href="">This is a text link</a>
-  <strong>Strong is used to indicate strong importance</strong>
-  Keybord input: <kbd>Cmd</kbd>
+    <h2 class="subheading">Paragraph</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
-  <hr>
+    <h2 class="subheading">Blockquote</h2>
+    <blockquote>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </blockquote>
 
-  <label for="keywordInput" class="label">SEARCH THE SITE</label>
-  <input type="text" id="keywordInput" placeholder="ENTER KEYWORD" class="input">
-  <a class="btn" href="">SEARCH</a>
-  <a class="btn disabled" href="">DISABLED</a>
+    <h2 class="subheading">Text link</h2>
+    <a href="">This is a text link</a>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Table Heading 1</th>
-        <th>Table Heading 2</th>
-        <th>Table Heading 3</th>
-        <th>Table Heading 4</th>
-        <th>Table Heading 5</th>
-      </tr>
-    </thead>
-    <tfoot>
-      <tr>
-        <th>Table Footer 1</th>
-        <th>Table Footer 2</th>
-        <th>Table Footer 3</th>
-        <th>Table Footer 4</th>
-        <th>Table Footer 5</th>
-      </tr>
-    </tfoot>
-    <tbody>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-      <tr>
-        <td>Table Cell 1</td>
-        <td>Table Cell 2</td>
-        <td>Table Cell 3</td>
-        <td>Table Cell 4</td>
-        <td>Table Cell 5</td>
-      </tr>
-    </tbody>
-  </table>
+    <h2 class="subheading">Strong</h2>
+    <strong>Strong is used to indicate strong importance</strong>
+
+    <h2 class="subheading">Keyboard</h2>
+    Keyboard input: <kbd>Cmd</kbd>
+
+    <h2 class="subheading">Hr</h2>
+    <hr>
+
+    <h2 class="subheading">Label</h2>
+    <label for="keywordInput" class="label">SEARCH THE SITE</label>
+
+    <h2 class="subheading">Input</h2>
+    <input type="text" id="keywordInput" placeholder="ENTER KEYWORD" class="input">
+
+    <h2 class="subheading">Buttons</h2>
+    <a class="btn" href="">SEARCH</a>
+    <a class="btn disabled" href="">DISABLED</a>
+
+    <h2 class="subheading">Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Table Heading 1</th>
+          <th>Table Heading 2</th>
+          <th>Table Heading 3</th>
+          <th>Table Heading 4</th>
+          <th>Table Heading 5</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Table Footer 1</th>
+          <th>Table Footer 2</th>
+          <th>Table Footer 3</th>
+          <th>Table Footer 4</th>
+          <th>Table Footer 5</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Table Cell 1</td>
+          <td>Table Cell 2</td>
+          <td>Table Cell 3</td>
+          <td>Table Cell 4</td>
+          <td>Table Cell 5</td>
+        </tr>
+        <tr>
+          <td>Table Cell 1</td>
+          <td>Table Cell 2</td>
+          <td>Table Cell 3</td>
+          <td>Table Cell 4</td>
+          <td>Table Cell 5</td>
+        </tr>
+        <tr>
+          <td>Table Cell 1</td>
+          <td>Table Cell 2</td>
+          <td>Table Cell 3</td>
+          <td>Table Cell 4</td>
+          <td>Table Cell 5</td>
+        </tr>
+        <tr>
+          <td>Table Cell 1</td>
+          <td>Table Cell 2</td>
+          <td>Table Cell 3</td>
+          <td>Table Cell 4</td>
+          <td>Table Cell 5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
     function lrPage() {
-      if(event.keyCode == 37) location.href = "./index.html";
+      if(event.keyCode == 37) location.href = "./structure.html";
       if(event.keyCode == 39) location.href = "./molecules.html";
     }
     window.document.onkeydown = lrPage;

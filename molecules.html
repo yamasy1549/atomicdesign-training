@@ -2,27 +2,50 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/atoms/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/molecules/style.css">
   <title>kansai-ug</title>
 </head>
 <body>
-  <div class="search-field">
-    <label for="keywordInput" class="label">SEARCH THE SITE</label>
-    <div class="search-form">
-      <input type="text" id="keywordInput" placeholder="ENTER KEYWORD" class="input">
-      <a class="btn" href="">SEARCH</a>
-    </div>
-  </div>
+  <h1 class="heading">Molecules <small>分子</small></h1>
+  <p class="lead">
+    /* 原子がくっついてできる最小の単位 */
+    <br>
+    /* コンポーネントとしての再利用性が高い */
+  </p>
 
-  <nav class="nav">
-    <ul>
-      <li class="nav-item">Home</li>
-      <li class="nav-item">About</li>
-      <li class="nav-item">Blog</li>
-      <li class="nav-item">Contact</li>
-    </ul>
-  </nav>
+  <div class="wrapper">
+
+    <h2 class="subheading">Search field</h2>
+    <div class="search-field">
+      <label for="keywordInput" class="label">SEARCH THE SITE</label>
+      <div class="search-form">
+        <input type="text" id="keywordInput" placeholder="ENTER KEYWORD" class="input">
+        <a class="btn" href="">SEARCH</a>
+      </div>
+    </div>
+
+    <h2 class="subheading">Name field</h2>
+    <div class="name-field">
+      <label for="name" class="label">Name</label>
+      <div class="search-form">
+        <input type="text" id="name" placeholder="Enter your name" class="input">
+      </div>
+    </div>
+
+    <h2 class="subheading">Nav</h2>
+    <nav class="nav">
+      <ul>
+        <li class="nav-item"><a href="">Home</a></li>
+        <li class="nav-item"><a href="">About</a></li>
+        <li class="nav-item"><a href="">Blog</a></li>
+        <li class="nav-item"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h2 class="subheading">Media</h2>
+    <iframe class="movie" width="560" height="315" src="https://www.youtube.com/embed/1hESTbW49KQ" frameborder="0" allowfullscreen></iframe>
+  </div>
 
   <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');

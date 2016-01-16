@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>kansai-ug</title>
+</head>
+<body>
+
+  <h1 class="heading">思ったこと</h1>
+
+  <div class="wrapper">
+    <ul class="supple">
+      <li>コンポーネントベースなので、修正する時は大元の 1 ヶ所を書き換えれば良いのがうれしい</li>
+      <li>mixin の引数として色を設定するのとかよさそう</li>
+      <li>
+        SCSS の import は <code>gem sass-globbing</code> を導入すればもうちょっとスッキリ書ける
+      </li>
+      <li>
+        名前がわかりにくい（Molecule / Organism など）<br>
+        → 実際使うときは違う名前にした方がいいと思う（ <code>components</code> とか）
+      </li>
+      <li>
+        Atom に variables も mixin の include も一緒に書かれてるの、なんかきもちわるい<br>
+        → variables と mixin の定義は別にディレクトリを作るとか
+      </li>
+      <li>
+        ディレクトリ分けは <code>headers（Atoms + variables + mixin）</code> <code>components（Molecules）</code> <code>shared（Organisms）</code> <code>layouts（Templates）</code> ぐらいがいいかもしれない
+      </li>
+      <li>
+        <strong>こういったスライドを作るのにはあんまり向いてない！</strong><br>
+        → もっと大きめな規模のものが向いてそう
+      </li>
+    </ul>
+  </div>
+
+  <div id="atom-top"></div>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
+    function lrPage() {
+      if(event.keyCode == 37) location.href = "./files2.html";
+      if(event.keyCode == 39) location.href = "./thanks.html";
+    }
+    window.document.onkeydown = lrPage;
+  </script>
+</body>
+</html>

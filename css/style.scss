@@ -1,7 +1,210 @@
 @import 'reset';
-
 @import 'atoms/style';
-@import 'molecules/style';
-@import 'organisms/style';
-@import 'templates/style';
-@import 'pages/style';
+
+* { color: $gray; }
+
+.title,
+.thanks {
+  font-size: 60px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .2);
+  text-align: center;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-top: -(180px/2);
+  margin-left: -(466px/2);
+
+  small { font-size: 30px; }
+}
+
+.thanks {
+  margin-top: -(180px/2);
+  margin-left: -(829px/2);
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .2);
+  position: fixed;
+  top: 50%;
+  left: 54%;
+
+  &:after {
+    content: '';
+    background: url('../images/doya-small.png');
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0 0 10px 10px;
+  }
+}
+
+.info {
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+
+  .name {
+    top: 70%;
+    bottom: 10%;
+    right: 10%;
+  }
+}
+
+.heading {
+  font-size: 50px;
+  margin: 80px auto 30px;
+  text-align: center;
+
+  small { font-size: 30px; }
+}
+
+.subheading {
+  border-bottom: 2px solid $gray;
+  padding-bottom: 8px;
+  margin: 30px 0 16px;
+}
+
+.lead {
+  text-align: center;
+  line-height: 2;
+}
+
+.myself {
+  margin: 0 auto;
+  list-style: none;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -(300px/2);
+  margin-left: -(420px/2);
+
+  li {
+    &:before {
+      content: '';
+      background-image: url('../images/sushi.png');
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+  }
+}
+
+.full {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.wrapper {
+  margin: 40px;
+}
+
+pre,
+code {
+  background-color: $gray;
+  color: $cream;
+}
+
+pre {
+  padding: 40px 40px 0 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+code {
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.supple {
+  font-size: 20px;
+  line-height: 2;
+  margin-left: 40px;
+}
+
+#atom-top {
+    border: 15px solid $gray;
+    border-radius: 50%;
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+
+  &:before {
+    content: '';
+    border: 1px solid $brown;
+    background-color: $brown;
+    border-radius: 50%;
+    position: fixed;
+    top: 113px;
+    right: 113px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &:after {
+    content: '';
+    border: 1px solid $brown;
+    background-color: $brown;
+    border-radius: 50%;
+    position: fixed;
+    top: -25px;
+    right: -25px;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+  }
+}
+
+#atom {
+    border: 15px solid $gray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+
+  &:before {
+    content: '';
+    border: 1px solid $brown;
+    background-color: $brown;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 113px;
+    left: 113px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &:after {
+    content: '';
+    border: 1px solid $brown;
+    background-color: $brown;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -25px;
+    left: -25px;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+  }
+}

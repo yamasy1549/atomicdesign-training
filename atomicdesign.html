@@ -7,19 +7,15 @@
 </head>
 <body>
 
-  <h1 class="title">Atomic Design <small>を<br>17歳なりに考えてみた</small></h1>
-  <p class="name">@yamasy1549</p>
-  <div class="info">
-    <p><time pubdate="2016-1-16">2016.01.16.</time></p>
-    <p>KFUG UI勉強会 − サイボウズの新オフィスで学ぶ2016年のUI −</p>
-  </div>
+  <img src="./images/atomicdesign-web.png" alt="Atomic designのサイト" class="full">
 
   <div id="atom"></div>
 
   <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
     function lrPage() {
-      if(event.keyCode == 39) location.href = "./about.html";
+      if(event.keyCode == 37) location.href = "./about.html";
+      if(event.keyCode == 39) location.href = "./structure.html";
     }
     window.document.onkeydown = lrPage;
   </script>

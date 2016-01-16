@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>kansai-ug</title>
+</head>
+<body>
+  <h1 class="heading">ファイル構成</h1>
+
+  <div class="wrapper">
+    <h2 class="subheading">1段階1ディレクトリ（今回はこれ）</h2>
+    <pre>
+awesome-project/
+ ├── index.html
+ └── css/
+        ├── atoms/
+        │      ├── _atoms.scss
+        │      └── style.scss
+        ├── molecules/
+        │      ├── _molecules.scss
+        │      └── style.scss
+        ├── organisms/
+        │      ├── _organisms.scss
+        │      └── style.scss
+        ├── pages/
+        │      ├── _pages.scss
+        │      └── style.scss
+        └── templates/
+              ├── _templates.scss
+              └── style.scss
+  </pre>
+
+    <ul class="supple">
+      <li>各ディレクトリの <code>style.scss</code> で ディレクトリ内のpartialを @import</li>
+      <li>さらに <code>css/style.scss</code> で各ディレクトリの <code>style.scss</code> を @import</li>
+      <li>例えば <code>atoms/_atoms.scss</code> には色の定義と @mixin を、 <code>atoms/style.scss</code> には class への @include を書く</li>
+      <li>メリット: アンスコのファイル（ <code>*/_*.scss</code> ）では色や mixin の定義のみ、 <code>*/style.scss</code> では mixin を @include させたりそれ以外の作業をする…と切り分けができる</li>
+      <li>デメリット: ファイルの数が多くなる</li>
+    </ul>
+  </div>
+
+  <div id="atom-top"></div>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
+    function lrPage() {
+      if(event.keyCode == 37) location.href = "./files1.html";
+      if(event.keyCode == 39) location.href = "./summary.html";
+    }
+    window.document.onkeydown = lrPage;
+  </script>
+</body>
+</html>

@@ -55,6 +55,13 @@ kbd {
   padding: 0.1rem 0.2rem;
   border-radius: 4px; }
 
+hr {
+  border: 0;
+  background-color: #493F37; }
+
+small {
+  font-size: 10px; }
+
 .label {
   color: #100000;
   font-size: 16px;
@@ -65,7 +72,7 @@ kbd {
 .input {
   display: inline-block;
   background-color: #100000;
-  color: #493F37;
+  color: #EEEEEE;
   font-size: 16px;
   line-height: 1;
   font-weight: bold;
@@ -73,17 +80,17 @@ kbd {
   border: 0;
   font-stretch: extra-condensed; }
   .input:placeholder-shown {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input::-webkit-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input:-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input::-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input:-ms-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
 
 .btn {
   display: inline-block;
@@ -113,6 +120,10 @@ table {
     text-align: left;
     border: 1px solid #493F37;
     padding: 0.2rem; }
+
+pre,
+code {
+  font-family: Ricty; }
 
 /* 基本的に単体ではUIとして意味をなさない */
 /* これ以上分割できない要素 */
@@ -170,6 +181,13 @@ kbd {
   padding: 0.1rem 0.2rem;
   border-radius: 4px; }
 
+hr {
+  border: 0;
+  background-color: #493F37; }
+
+small {
+  font-size: 10px; }
+
 .label {
   color: #100000;
   font-size: 16px;
@@ -180,7 +198,7 @@ kbd {
 .input {
   display: inline-block;
   background-color: #100000;
-  color: #493F37;
+  color: #EEEEEE;
   font-size: 16px;
   line-height: 1;
   font-weight: bold;
@@ -188,17 +206,17 @@ kbd {
   border: 0;
   font-stretch: extra-condensed; }
   .input:placeholder-shown {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input::-webkit-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input:-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input::-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input:-ms-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
 
 .btn {
   display: inline-block;
@@ -229,6 +247,10 @@ table {
     border: 1px solid #493F37;
     padding: 0.2rem; }
 
+pre,
+code {
+  font-family: Ricty; }
+
 .search-field .search-form {
   display: flex; }
 .search-field .label {
@@ -239,6 +261,10 @@ table {
   margin-right: 4px; }
 .search-field .btn {
   flex-grow: 1; }
+
+.name-field .label {
+  display: block;
+  padding-bottom: 0.3rem; }
 
 .nav ul,
 .nav ol {
@@ -252,6 +278,9 @@ table {
   text-decoration: none; }
 
 .logo {
+  display: block; }
+
+.movie {
   display: block; }
 
 /* 基本的に単体ではUIとして意味をなさない */
@@ -310,6 +339,13 @@ kbd {
   padding: 0.1rem 0.2rem;
   border-radius: 4px; }
 
+hr {
+  border: 0;
+  background-color: #493F37; }
+
+small {
+  font-size: 10px; }
+
 .label {
   color: #100000;
   font-size: 16px;
@@ -320,7 +356,7 @@ kbd {
 .input {
   display: inline-block;
   background-color: #100000;
-  color: #493F37;
+  color: #EEEEEE;
   font-size: 16px;
   line-height: 1;
   font-weight: bold;
@@ -328,17 +364,17 @@ kbd {
   border: 0;
   font-stretch: extra-condensed; }
   .input:placeholder-shown {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input::-webkit-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input:-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input::-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input:-ms-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
 
 .btn {
   display: inline-block;
@@ -368,6 +404,10 @@ table {
     text-align: left;
     border: 1px solid #493F37;
     padding: 0.2rem; }
+
+pre,
+code {
+  font-family: Ricty; }
 
 /* 基本的に単体ではUIとして意味をなさない */
 /* これ以上分割できない要素 */
@@ -425,6 +465,13 @@ kbd {
   padding: 0.1rem 0.2rem;
   border-radius: 4px; }
 
+hr {
+  border: 0;
+  background-color: #493F37; }
+
+small {
+  font-size: 10px; }
+
 .label {
   color: #100000;
   font-size: 16px;
@@ -435,7 +482,7 @@ kbd {
 .input {
   display: inline-block;
   background-color: #100000;
-  color: #493F37;
+  color: #EEEEEE;
   font-size: 16px;
   line-height: 1;
   font-weight: bold;
@@ -443,17 +490,17 @@ kbd {
   border: 0;
   font-stretch: extra-condensed; }
   .input:placeholder-shown {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input::-webkit-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
   .input:-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input::-moz-placeholder {
-    color: #493F37;
+    color: #EEEEEE;
     opacity: 1; }
   .input:-ms-input-placeholder {
-    color: #493F37; }
+    color: #EEEEEE; }
 
 .btn {
   display: inline-block;
@@ -484,6 +531,10 @@ table {
     border: 1px solid #493F37;
     padding: 0.2rem; }
 
+pre,
+code {
+  font-family: Ricty; }
+
 .search-field .search-form {
   display: flex; }
 .search-field .label {
@@ -494,6 +545,10 @@ table {
   margin-right: 4px; }
 .search-field .btn {
   flex-grow: 1; }
+
+.name-field .label {
+  display: block;
+  padding-bottom: 0.3rem; }
 
 .nav ul,
 .nav ol {
@@ -507,6 +562,9 @@ table {
   text-decoration: none; }
 
 .logo {
+  display: block; }
+
+.movie {
   display: block; }
 
 .header {
@@ -543,10 +601,19 @@ table {
 .main > .row {
   margin: 30px 0; }
 
+.footer {
+  background-color: #493F37;
+  color: #F3F2DB;
+  text-align: center;
+  padding: 30px; }
+
 .header {
   margin-bottom: 30px; }
 
 .main {
   padding: 0 20px; }
+
+.footer {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */

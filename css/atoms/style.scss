@@ -20,6 +20,8 @@ p { @include p; }
 blockquote { @include blockquote; }
 a { @include a; }
 kbd { @include kbd; }
+hr { @include hr; }
+small { @include small; }
 
 .label { @include label; }
 .input { @include input; }
@@ -27,3 +29,8 @@ kbd { @include kbd; }
 .disabled { @include disabled; }
 
 table { @include table; }
+
+pre,
+code {
+  font-family: $code-font;
+}

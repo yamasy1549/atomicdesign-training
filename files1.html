@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>kansai-ug</title>
+</head>
+<body>
+  <h1 class="heading">ファイル構成</h1>
+
+  <div class="wrapper">
+    <h2 class="subheading">1段階1ファイル</h2>
+    <pre>
+awesome-project/
+ ├ ── index.html
+ └── css/
+        ├── _atoms.scss
+        ├── _molecules.scss
+        ├── _organisms.scss
+        ├── _pages.scss
+        ├── _templates.scss
+        └── style.scss
+  </pre>
+
+    <ul class="supple">
+      <li><code>style.scss</code> で @import</li>
+      <li>例えば <code>_atoms.scss</code> には色の定義もするし @mixin も書くし class に @include もする</li>
+      <li>メリット: ファイルの数が少なくて済む</li>
+      <li>デメリット: variables なモノも書くけどファイルの下の方では @include もしてるってのがごちゃごちゃしそう</li>
+    </ul>
+  </div>
+
+  <div id="atom-top"></div>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=2"></' + 'script>');
+    function lrPage() {
+      if(event.keyCode == 37) location.href = "./pages.html";
+      if(event.keyCode == 39) location.href = "./files2.html";
+    }
+    window.document.onkeydown = lrPage;
+  </script>
+</body>
+</html>

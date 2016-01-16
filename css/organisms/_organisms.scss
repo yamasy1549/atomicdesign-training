@@ -47,3 +47,10 @@
     margin: 30px 0;
   }
 }
+
+@mixin footer {
+  background-color: $gray;
+  color: $cream;
+  text-align: center;
+  padding: 30px;
+}

@@ -2,5 +2,7 @@
 @import 'molecules';
 
 .search-field { @include searchField; }
+.name-field { @include nameField; }
 .nav { @include nav; }
 .logo { @include logo; }
+.movie { @include movie; }
