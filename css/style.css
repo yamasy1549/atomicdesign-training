@@ -302,7 +302,9 @@ code {
 .full {
   height: 100%;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 .wrapper {
   margin: 40px; }
